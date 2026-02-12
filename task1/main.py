@@ -1,5 +1,7 @@
-from icmplib import ping
 import csv
+
+from icmplib import ping
+
 
 sites = [
     "google.com", "youtube.com", "wikipedia.org", "openai.com", "github.com",
@@ -43,4 +45,3 @@ def save_results(domains, filename):
 
 save_results(sites, output_file)
 
-print(f"Файл {output_file} успешно создан")
