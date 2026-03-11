@@ -83,28 +83,23 @@ def main() -> None:
     parser.add_argument(
         "--base-url",
         default="https://quotes.toscrape.com",
-        help="Base URL of the website to parse.",
     )
     parser.add_argument(
         "--max-pages",
         type=int,
         default=5,
-        help="Maximum number of pages to parse.",
     )
     parser.add_argument(
         "--username",
         default=None,
-        help="Username for optional login.",
     )
     parser.add_argument(
         "--password",
         default=None,
-        help="Password for optional login.",
     )
     parser.add_argument(
         "--output",
         default="quotes.csv",
-        help="Path to output CSV file.",
     )
     args = parser.parse_args()
 
