@@ -12,7 +12,6 @@ def login_if_needed(page, base_url: str, username: str | None, password: str | N
     page.goto(f"{base_url}/login", wait_until="domcontentloaded")
     page.fill('input[name="username"]', username)
     page.fill('input[name="password"]', password)
-    # Avoid flaky clickability checks in headless mode: submit the form directly.
     page.locator("form").first.evaluate("form => form.submit()")
     page.wait_for_load_state("domcontentloaded")
 
@@ -127,6 +126,3 @@ def main() -> None:
 if __name__ == "__main__":
     main()
 
-#python main.py --max-pages 3 --output output.csv
-#python main.py --username admin --password admin --max-pages 3 --output output.csv
-#python main.py --base-url "https://example.com" --max-pages 3 --output output.csv
