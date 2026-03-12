@@ -1,0 +1,21 @@
+{
+    "items": [
+        {
+            "id": 40,
+            "source_url": "https://quotes.toscrape.com/",
+            "quote": "A day without sunshine is like, you know, night.",
+            "author": "Steve Martin",
+            "tags": "humor, obvious, simile",
+            "author_url": "https://quotes.toscrape.com/author/Steve-Martin",
+            "page": 1,
+            "parsed_at": "2026-03-12T10:24:53.417256+05:00"
+        },
+        {
+            "id": 39,
+            "source_url": "https://quotes.toscrape.com/",
+            "quote": "A woman is like a tea bag...",
+            "author": "Eleanor Roosevelt"
+        }
+    ],
+    "count": 10
+}
