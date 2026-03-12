@@ -1,5 +1,45 @@
-python main.py --max-pages 3 --output output.csv
+# Playwright Quotes Parser
 
-python main.py --username admin --password admin --max-pages 3 --output output.csv
+Простой парсер на **Python + Playwright**, который собирает цитаты с сайта  
+https://quotes.toscrape.com
 
-python main.py --base-url "https://example.com" --max-pages 3 --output output.csv
+Скрипт поддерживает:
+
+- пагинацию
+- авторизацию
+- сохранение данных в CSV
+- настройку параметров через аргументы командной строки
+
+---
+
+# Возможности
+
+- автоматическое открытие сайта через браузер Playwright
+- сбор данных с нескольких страниц
+- извлечение нескольких параметров
+- опциональная авторизация
+- сохранение результатов в CSV
+- настройка количества страниц для парсинга
+
+---
+
+# Собираемые данные
+
+Для каждой цитаты сохраняются:
+
+| поле | описание |
+|-----|-----|
+| quote | текст цитаты |
+| author | автор цитаты |
+| tags | теги цитаты |
+| author_url | ссылка на страницу автора |
+| page | номер страницы |
+
+---
+
+# Установка
+
+## 1. Установить зависимости
+
+```bash
+pip install -r requirements.txt
